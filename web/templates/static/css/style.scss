@@ -16,117 +16,116 @@ $oxford-blue: #011638;
 
 body {
     font-family: 'Montserrat', sans-serif;
-    nav {
-        display: flex;
-        width: 100vw;
-        background-color: $spanish-blue;
-        padding: 10px;
-        justify-content: space-between;
-    
-        .brand, .menu {
-            line-height: 1.5rem;
-            vertical-align: middle;
-            color: white;
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
-            #logo {
-                height: 1.5rem;
-                vertical-align: middle;
-            }
-        }
-    
-        a {
-            margin: 0 10px;
-            color: white;
-        }
-    }
+}
 
-    header {
+nav {
+    display: flex;
+    width: 100vw;
+    background-color: $spanish-blue;
+    padding: 10px;
+    justify-content: space-between;
+
+    .brand, .menu {
+        line-height: 1.5rem;
+        vertical-align: middle;
+        color: white;
         display: flex;
+        flex-wrap: nowrap;
         flex-direction: row;
-        width: 100vw;
-        text-align: center;
-        justify-content: center;
-        background-color: $alice-blue;
-
-        .container {
-            display: flex;
-            height: 300px;
-            flex-direction: column;
-            justify-content: space-evenly;
-            .about-us {
-                .brand {
-                    #logo {
-                        height: 3rem;
-                        vertical-align: middle;
-                    }
-                    font-size: 5rem;
-                }
-            }
-
-            .action-buttons a {
-                padding: 15px;
-                margin: 10px;
-                background-color: $spanish-blue;
-                color: white;
-                border-radius: 5px;
-
-                &:hover {
-                    color: $spanish-blue;
-                    background-color: $alice-blue;
-                    transition: 0.3s;
-                }
-            }
-        }
-    }
-
-    footer {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        .container {
-            font-size: 1rem;
-            display: flex;
-            flex-direction: row;
-            padding: 10px;
-            a, span {
-                margin: 0 10px;
-            }
+        #logo {
+            height: 1.5rem;
+            vertical-align: middle;
         }
     }
 
     a {
-        text-decoration: none;
-        color: $oxford-blue;
+        margin: 0 10px;
+        color: white;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+    background-color: $alice-blue;
+
+    .container {
+        display: flex;
+        height: 300px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .about-us {
+            .brand {
+                #logo {
+                    height: 3rem;
+                    vertical-align: middle;
+                }
+                font-size: 5rem;
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    .container {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        a, span {
+            margin: 0 10px;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $oxford-blue;
+}
+
+.action-buttons a {
+    padding: 15px;
+    margin: 10px;
+    background-color: $spanish-blue;
+    color: white;
+    border-radius: 5px;
+
+    &:hover {
+        color: $spanish-blue;
+        background-color: $alice-blue;
+        transition: 0.3s;
     }
 }
 
 @media only screen and (max-width: 700px) {
-    body {
-        nav {
-            padding: 5px;
-            flex-direction: column;
-            .brand {
-                font-weight: bold;
-            }
-
-            .brand, .menu {
-                flex-direction: column;
-            }
-
-            a {
-                margin: 5px 0;
-                text-align: center;
-            }
+    nav {
+        padding: 5px;
+        flex-direction: column;
+        .brand {
+            font-weight: bold;
         }
 
-        footer {
-            padding: 5px;
-            .container {
-                flex-direction: column;
-                margin: 5px 0;
-            }
+        .brand, .menu {
+            flex-direction: column;
+        }
+
+        a {
+            margin: 5px 0;
+            text-align: center;
+        }
+    }
+
+    footer {
+        padding: 5px;
+        .container {
+            flex-direction: column;
+            margin: 5px 0;
         }
     }
 }

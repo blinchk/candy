@@ -9,14 +9,15 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-body nav {
+
+nav {
   display: flex;
   width: 100vw;
   background-color: #1c77c3;
   padding: 10px;
   justify-content: space-between;
 }
-body nav .brand, body nav .menu {
+nav .brand, nav .menu {
   line-height: 1.5rem;
   vertical-align: middle;
   color: white;
@@ -24,15 +25,16 @@ body nav .brand, body nav .menu {
   flex-wrap: nowrap;
   flex-direction: row;
 }
-body nav .brand #logo, body nav .menu #logo {
+nav .brand #logo, nav .menu #logo {
   height: 1.5rem;
   vertical-align: middle;
 }
-body nav a {
+nav a {
   margin: 0 10px;
   color: white;
 }
-body header {
+
+header {
   display: flex;
   flex-direction: row;
   width: 100vw;
@@ -40,69 +42,73 @@ body header {
   justify-content: center;
   background-color: #dcedff;
 }
-body header .container {
+header .container {
   display: flex;
   height: 300px;
   flex-direction: column;
   justify-content: space-evenly;
 }
-body header .container .about-us .brand {
+header .container .about-us .brand {
   font-size: 5rem;
 }
-body header .container .about-us .brand #logo {
+header .container .about-us .brand #logo {
   height: 3rem;
   vertical-align: middle;
 }
-body header .container .action-buttons a {
+
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+footer .container {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+footer .container a, footer .container span {
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #011638;
+}
+
+.action-buttons a {
   padding: 15px;
   margin: 10px;
   background-color: #1c77c3;
   color: white;
   border-radius: 5px;
 }
-body header .container .action-buttons a:hover {
+.action-buttons a:hover {
   color: #1c77c3;
   background-color: #dcedff;
   transition: 0.3s;
 }
-body footer {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-body footer .container {
-  font-size: 1rem;
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-}
-body footer .container a, body footer .container span {
-  margin: 0 10px;
-}
-body a {
-  text-decoration: none;
-  color: #011638;
-}
 
 @media only screen and (max-width: 700px) {
-  body nav {
+  nav {
     padding: 5px;
     flex-direction: column;
   }
-  body nav .brand {
+  nav .brand {
     font-weight: bold;
   }
-  body nav .brand, body nav .menu {
+  nav .brand, nav .menu {
     flex-direction: column;
   }
-  body nav a {
+  nav a {
     margin: 5px 0;
     text-align: center;
   }
-  body footer {
+
+  footer {
     padding: 5px;
   }
-  body footer .container {
+  footer .container {
     flex-direction: column;
     margin: 5px 0;
   }
