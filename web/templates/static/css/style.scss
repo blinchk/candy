@@ -18,15 +18,20 @@ body {
     font-family: 'Montserrat', sans-serif;
     nav {
         display: flex;
-        width: 100%;
+        width: 100vw;
         background-color: $spanish-blue;
         padding: 10px;
         justify-content: space-between;
     
         .brand, .menu {
+            line-height: 2rem;
             color: white;
             display: flex;
+            flex-wrap: nowrap;
             flex-direction: row;
+            #logo {
+                height: 1.5rem;
+            }
         }
     
         a {
@@ -45,11 +50,14 @@ body {
 
         .container {
             display: flex;
-            height: 400px;
+            height: 300px;
             flex-direction: column;
             justify-content: space-evenly;
             .about-us {
                 .brand {
+                    #logo {
+                        height: 3rem;
+                    }
                     font-size: 5rem;
                 }
             }

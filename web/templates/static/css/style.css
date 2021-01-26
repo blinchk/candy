@@ -11,15 +11,20 @@ body {
 }
 body nav {
   display: flex;
-  width: 100%;
+  width: 100vw;
   background-color: #1c77c3;
   padding: 10px;
   justify-content: space-between;
 }
 body nav .brand, body nav .menu {
+  line-height: 2rem;
   color: white;
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
+}
+body nav .brand #logo, body nav .menu #logo {
+  height: 1.5rem;
 }
 body nav a {
   margin: 0 10px;
@@ -35,12 +40,15 @@ body header {
 }
 body header .container {
   display: flex;
-  height: 400px;
+  height: 300px;
   flex-direction: column;
   justify-content: space-evenly;
 }
 body header .container .about-us .brand {
   font-size: 5rem;
+}
+body header .container .about-us .brand #logo {
+  height: 3rem;
 }
 body header .container .action-buttons a {
   padding: 15px;
