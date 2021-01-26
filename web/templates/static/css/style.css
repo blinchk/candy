@@ -17,7 +17,8 @@ body nav {
   justify-content: space-between;
 }
 body nav .brand, body nav .menu {
-  line-height: 2rem;
+  line-height: 1.5rem;
+  vertical-align: middle;
   color: white;
   display: flex;
   flex-wrap: nowrap;
@@ -25,6 +26,7 @@ body nav .brand, body nav .menu {
 }
 body nav .brand #logo, body nav .menu #logo {
   height: 1.5rem;
+  vertical-align: middle;
 }
 body nav a {
   margin: 0 10px;
@@ -49,6 +51,7 @@ body header .container .about-us .brand {
 }
 body header .container .about-us .brand #logo {
   height: 3rem;
+  vertical-align: middle;
 }
 body header .container .action-buttons a {
   padding: 15px;
