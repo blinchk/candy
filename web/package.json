@@ -1,0 +1,22 @@
+{
+  "name": "candyweb",
+  "version": "0.0.1",
+  "description": "candy! web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blinchk/candy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blinchk/candy/issues"
+  },
+  "homepage": "https://github.com/blinchk/candy#readme",
+  "dependencies": {
+    "sass": "^1.32.5"
+  }
+}
