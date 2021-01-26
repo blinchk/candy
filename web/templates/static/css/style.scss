@@ -1,0 +1,126 @@
+// Colors
+$spanish-blue: #1c77c3;
+$alice-blue: #dcedff;
+$maize-crayola: #eec643;
+$eerie-black: #141414;
+$oxford-blue: #011638;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    nav {
+        display: flex;
+        width: 100%;
+        background-color: $spanish-blue;
+        padding: 10px;
+        justify-content: space-between;
+    
+        .brand, .menu {
+            color: white;
+            display: flex;
+            flex-direction: row;
+        }
+    
+        a {
+            margin: 0 10px;
+            color: white;
+        }
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        text-align: center;
+        justify-content: center;
+        background-color: $alice-blue;
+
+        .container {
+            display: flex;
+            height: 400px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .about-us {
+                .brand {
+                    font-size: 5rem;
+                }
+            }
+
+            .action-buttons a {
+                padding: 15px;
+                margin: 10px;
+                background-color: $spanish-blue;
+                color: white;
+                border-radius: 5px;
+
+                &:hover {
+                    color: $spanish-blue;
+                    background-color: $alice-blue;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        .container {
+            font-size: 1rem;
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            a, span {
+                margin: 0 10px;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $oxford-blue;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        nav {
+            padding: 5px;
+            flex-direction: column;
+            .brand {
+                font-weight: bold;
+            }
+
+            .brand, .menu {
+                flex-direction: column;
+            }
+
+            a {
+                margin: 5px 0;
+                text-align: center;
+            }
+        }
+
+        footer {
+            padding: 5px;
+            .container {
+                flex-direction: column;
+                margin: 5px 0;
+            }
+        }
+    }
+}
+
+// FontAwesome
+@import "../fontawesome/fontawesome.scss";
+@import "../fontawesome/solid.scss";
+@import "../fontawesome/brands.scss";
