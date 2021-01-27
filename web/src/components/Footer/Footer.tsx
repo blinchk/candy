@@ -15,7 +15,7 @@ export default class Footer extends Component {
         return (
             <footer className="footer">
                 <span>&#0169; candy!dev team, 2021</span>
-                <a href="https://github.com/blinchk/candy" class="source-code"><FontAwesomeIcon icon={faGithub}/> source code</a>
+                <a href="https://github.com/blinchk/candy" className="source-code"><FontAwesomeIcon icon={faGithub}/> source code</a>
                 <a href="">profile</a>
                 <a href="">about us</a>
             </footer>
