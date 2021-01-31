@@ -1,0 +1,18 @@
+@import 'src/variables.scss';
+
+.user {
+    display: flex;
+    align-items: center;
+    transition: all .25s ease-in-out;
+    &__url {
+        color: white;
+    }
+    &:hover {
+        path {
+            fill: $oxford-blue;
+        }
+    }
+    path {
+        fill: white;
+    }
+}

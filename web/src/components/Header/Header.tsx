@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Nav from "./Nav/Nav";
+import User from "./User/User";
 
 import "./Header.scss";
 
@@ -14,6 +15,7 @@ class Header extends Component {
                     <img src={logo} alt="brand" className="brand__logo"/> candy!
                 </a>
                 <Nav/>
+                <User/>
             </header>
         );
     }

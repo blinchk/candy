@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $default-font;
 }
 
 .logo {
@@ -35,5 +35,20 @@ a {
 
     &:hover {
         color: darken($oxford-blue, 10%);
+    }
+}
+
+.btn {
+    margin: auto;
+    padding: 8px 15px;
+    background-color: $spanish-blue;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    font-family: $default-font;
+    &:hover {
+        color: $spanish-blue;
+        background-color: $alice-blue;
+        transition: 0.3s;
     }
 }

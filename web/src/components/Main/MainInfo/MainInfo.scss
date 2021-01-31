@@ -7,7 +7,7 @@
     justify-content: center;
     
 
-    .main-info {
+    &-info {
         width: 100%;
         background-color: $alice-blue;
         display: flex;
@@ -39,16 +39,6 @@
     }
 }
 
-.action-buttons a {
-    padding: 15px;
+.action-buttons .btn {
     margin: 10px;
-    background-color: $spanish-blue;
-    color: white;
-    border-radius: 5px;
-
-    &:hover {
-        color: $spanish-blue;
-        background-color: $alice-blue;
-        transition: 0.3s;
-    }
 }
