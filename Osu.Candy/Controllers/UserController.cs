@@ -4,7 +4,8 @@ namespace Osu.Candy.Controllers
 {
     public class UserController : Controller
     {
-        // GET
+        // GETs
+        [Route("profile")]
         public IActionResult Index(int id)
         {
             return View($"/user/{id}");
