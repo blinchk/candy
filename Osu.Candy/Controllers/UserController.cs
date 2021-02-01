@@ -1,14 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Osu.Candy.Models;
 
 namespace Osu.Candy.Controllers
 {
     public class UserController : Controller
     {
         // GETs
-        [Route("profile")]
-        public IActionResult Index(int id)
+        [Route("user")]
+        public User Index(int id)
         {
-            return View($"/user/{id}");
+            return new User(id);
         }
     }
 }

@@ -2,11 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 
 namespace Osu.Candy.Models
 {
     public class User
     {
+        public User(int id)
+        {
+            string url = $"https://osu.ppy.sh/oauth/authorize/v2/users/{id}/";
+        }
+
         public int Id { get; set; }
         public string Nickname { get; set; }
         public string CountryCode { get; set; }
