@@ -7,6 +7,11 @@
     <IsPackable>false</IsPackable>
     <SpaRoot>ClientApp\</SpaRoot>
     <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
+    <Version>0.0.1</Version>
+    <Authors>uzervlad, blinchk, TheEZIC</Authors>
+    <Company>OctoDumb</Company>
+    <Copyright></Copyright>
+    <Product>candy!</Product>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <Folder Include="Controllers\Api\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
@@ -49,5 +54,21 @@
       </ResolvedFileToPublish>
     </ItemGroup>
   </Target>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES2015</TypeScriptTarget>
+    <TypeScriptJSXEmit>React</TypeScriptJSXEmit>
+    <TypeScriptModuleKind>ES6</TypeScriptModuleKind>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
 
 </Project>

@@ -22,7 +22,7 @@ class MainInfo extends Component<{}, IMainInfoState> {
         clientSecret: "0S9VnjocHShVJNbCdLZwrVKTP7EFad4SDZI2oXXK",
         accessTokenUri: "https://osu.ppy.sh/oauth/token",
         authorizationUri: "https://osu.ppy.sh/oauth/authorize",
-        redirectUri: "http://localhost:44370",
+        redirectUri: "http://localhost:3000",
         scopes: ["identify", "public"],
     });
 
