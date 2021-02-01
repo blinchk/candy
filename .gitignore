@@ -24,8 +24,9 @@ Bin/
 obj/
 Obj/
 
-# Visual Studio 2015 cache/options directory
+# Visual Studio 2015 and Project Rider cache/options directory
 .vs/
+.idea/
 /wwwroot/dist/
 
 # MSTest test Results
