@@ -10,7 +10,7 @@ namespace Osu.Candy.Models
     {
         public User(int id)
         {
-            string url = $"https://osu.ppy.sh/oauth/authorize/v2/users/{id}/";
+            string url = $"https://osu.ppy.sh/api/v2/users/{id}/";
         }
 
         public int Id { get; set; }
