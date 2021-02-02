@@ -2,9 +2,9 @@
 **candy!** is revolutionary osu! tournament and matchmaking platform with own ranking system.
 
 ## Our team
-* @blinchk - Full Stack Developer
-* @TheEZIC - Front-End Developer
-* @uzervlad - Back-End Developer
+* [@blinchk](https://github.com/blinchk) - Full Stack Developer
+* [@TheEZIC](https://github.com/TheEZIC) - Front-End Developer
+* [@uzervlad](https://github.com/uzervlad) - Back-End Developer
 
 ## Technologies
 1. <img src="https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png" height="20px" alt="React"/> <img src="https://cdn.iconscout.com/icon/free/png-512/typescript-1174965.png" height="20px" alt="TypeScript"/> on Front-End
