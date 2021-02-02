@@ -12,6 +12,7 @@
     <Company>OctoDumb</Company>
     <Copyright></Copyright>
     <Product>candy!</Product>
+    <LangVersion>9</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,6 +21,9 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="React.Router" Version="5.2.11" />
+    <PackageReference Include="System.Json" Version="4.7.1" />
+    <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,6 +39,10 @@
 
   <ItemGroup>
     <Folder Include="Controllers\Api\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Remove="ClientApp\src\components\Registration\Registration.tsx" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

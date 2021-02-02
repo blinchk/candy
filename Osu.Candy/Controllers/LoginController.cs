@@ -2,7 +2,7 @@
 
 namespace Osu.Candy.Controllers
 {
-    [Route("authorize")]
+    [Route("api/authorize")]
     public class LoginController : Controller
     {
     }
