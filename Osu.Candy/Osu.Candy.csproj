@@ -43,6 +43,8 @@
 
   <ItemGroup>
     <TypeScriptCompile Remove="ClientApp\src\components\Registration\Registration.tsx" />
+    <TypeScriptCompile Include="ClientApp\src\router\history.ts" />
+    <TypeScriptCompile Remove="ClientApp\src\router\history.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

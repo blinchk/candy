@@ -1,0 +1,19 @@
+.profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__container  {
+    width: 70%;
+    padding: 10px;
+  }
+}
+
+.user {
+  &__identity {
+    padding: 0 10px;
+  }
+  &__avatar {
+    width: 150px;
+    border-radius: 50%;
+  }
+}
