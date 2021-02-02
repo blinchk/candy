@@ -10,10 +10,8 @@ namespace Osu.Candy.Controllers
     public class ProfileController : Controller
     {
         [Route("api/profile")]
-        public Task<string> Index(int id)
+        public void Index(int id)
         {
-            var user = new User(id);
-            return user.Request();
         }
     }
 }
