@@ -8,15 +8,15 @@ using Newtonsoft.Json.Linq;
 using Osu.Candy.APIv2;
 using Osu.Candy.GameInfo;
 
-namespace Osu.Candy.APIv2.EndpoinsGroups.Users
+namespace Osu.Candy.APIv2.EndpointsGroups.Users
 {
-    public class GetUserRequest : Request
+    public class UserRequest : Request
     {
         public interface IUserData
         {
-            string cover_url {get; set;}
-            string? discord {get; set;}
-            GameModes playmode {get; set;}
+            string CoverUrl {get; set;}
+            string Discord {get; set;}
+            GameModes GameMode {get; set;}
         }
         public static async Task<IUserData> GetUser(GameModes? mode = 0) 
         {
